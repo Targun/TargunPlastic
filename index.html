@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='targun'>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Targun Plastic</title>
+    <link rel="shortcut icon" type="image/png" href="/Example-Favicon.png"/>
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+    <!-- Styles -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body ng-controller="targunCtrl">
+
+    <video autoplay="" loop="" poster="img/bg.png" id="bgvid">
+      <source src="https://mediasvc3822mgvwkbql4.blob.core.windows.net/asset-c0c0bff1-7661-485e-924c-10b86f58e54a/shutterstock_v2033395.mp4?sv=2012-02-12&sr=c&si=3256f473-47b6-4e55-808c-8fa26a900831&sig=FABEEL0SNpdfvhh4ptWfXI2VvJzCajW0LHaVtxG2wFA%3D&st=2014-10-03T22%3A57%3A49Z&se=2016-10-02T22%3A57%3A49Z" type="video/mp4">
+    </video>
+    <img class="targun-logo" src="img/targunLogo.png">
+
+    <div class="part" ng-show="aboutPart">
+      <div class="part-title">About</div>
+      <i class="ion-close-round exit" ng-click="exitAbout()"></i>
+      <p class="content">Targun Plastic Co. is a trusted thermoplastic distributor that has served the palstics industry since 1958.  We are dedicated to meeting our clients' needs for long-term development and producitivity.  As a family dusiness, we treat these needs as if they were out own.</p>
+      <p class="content">With the help of valued vendors and customers, we specialize in structuring customized plastic supply chains and other material procurement services, to ensure that product withdrawal has a robust rundown plan so financial exposure on stock is properly mitigated and planned with focus on enhanced deal flow.</p>
+      <img class="truck" src="img/trucks.png">
+    </div>
+
+    <div class="part" ng-show="primePart">
+      <div class="part-title">Prime</div>
+      <i class="ion-close-round exit" ng-click="exitPrime()"></i>
+      <div class="prime">
+        <img class="chem" src="img/Exxon.jpg">
+      </div>
+      <div class="prime">
+        <img class="chem" src="img/CP-Chem.jpg">
+        <img class="chem" src="img/LyondellBasell.jpg">
+      </div>
+    </div>
+
+    <div class="part" ng-show="contactPart">
+      <div class="part-title">Contact</div>
+      <i class="ion-close-round exit" ng-click="exitContact()"></i>
+      <div class="row">
+      <p class="content-contact">Thanks for Visiting Targun Plastic Co.</p>
+        <p class="content-contact">Nothing is more valuable than being able to shake a hand and share a genuine connection.</p>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="chem" src="img/people.jpg">
+        </div>
+        <div class="col-sm-6 contact">
+          <p>899 Skokie Boulevard</p>
+          <p>Northbrook, IL 60062</p>
+          <p>Plastics@Targun.com</p>
+          <p>Tel: (847) 509-9355</p>
+          <p>Fax: (847) 509-9359</p>
+        </div>
+      </div>
+    </div>
+
+      <footer>
+        <p class="slogan">Targun Plastic Co.</p>
+        <ul>
+          <li class="footerA" ng-click="openAbout()">About</li>
+          <li class="footerA" ng-click="openPrime()">Prime</li>
+          <li class="footerA" ng-click="openContact()">Contact</li>
+        </ul>
+      </footer>
+
+
+
+    <!-- jQuery & AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

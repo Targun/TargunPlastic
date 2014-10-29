@@ -1,0 +1,163 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+/************************************************
+*** Video ***
+************************************************/
+
+video {
+position: fixed;
+right: 0;
+bottom: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+background-size: cover;
+}
+
+#bgvid { 
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px); 
+	-o-filter: blur(5px); 
+	-ms-filter: blur(5px); 
+	filter: blur(5px);
+}
+
+/*****************************/
+
+.prime {
+	text-align: center;
+}
+
+.chem {
+	width: 250px;
+	margin: 25px 40px;
+}
+
+.targun-logo {
+	width: 150px;
+	position: absolute;
+	top: -20px;
+	left: 70px;
+	
+}
+
+.part {
+	height: 500px;
+	width: 800px;
+	background: #fff;
+	position: absolute;
+	top: 200px;
+	left: 320px;
+	border-radius: 3px;
+	padding: 40px;
+	margin-bottom: 100px;
+}
+
+.part-title {
+	font-size: 3.5rem;
+	display: inline-block;
+	margin-bottom: 15px;
+	color: #F05134;
+}
+
+.content {
+	font-size: 1.7rem;
+}
+
+.exit {
+	float: right;
+	font-size: 2.5rem;
+}
+
+.truck {
+	margin-top: 20px; 
+}
+
+.contact {
+	line-height: 20px;
+	font-size: 2.5rem;
+	margin-top: 28px;
+}
+
+.content-contact {
+	text-align: center;
+	font-size: 2.5rem;
+	color: #0255A6;
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:60px;
+   width:100%;
+   background: #FFF;
+   font-size: 2rem;
+   font-weight: 400;
+   color: #fff;
+   background-color: #F05134;
+}
+
+footer ul {
+	float: right;
+	margin: 0 90px;
+}
+
+footer li {
+	display: inline-block;
+	line-height: 60px;
+	margin: 0 30px;
+}
+
+footer .slogan {
+	line-height: 60px;
+	margin-left: 80px;
+	font-weight: 400;
+	display: inline-block;
+	font-size: 2rem;
+}
+
+.footerA {
+
+}
+.footerA:hover {
+	cursor: pointer;
+	color: #0255A6;
+}
+
+
+
+
+
+
+
+/* =Media Queries
+-------------------------------------------------------------- */
+@media (max-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (max-width: 992px) {
+
+}
+/* Portrait tablets and small desktops */
+@media (max-width: 768px) {
+
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Phones and down */
+@media (max-width: 480px) {
+
+}
